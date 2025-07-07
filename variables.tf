@@ -14,7 +14,7 @@ variable "customer_gateway_ip" {
 }
 
 variable "on_prem_cidr" {
-  default     = "192.168.1.0/24"
+  default     = "192.168.0.0/16"
   description = "On-prem network range"
 }
 
