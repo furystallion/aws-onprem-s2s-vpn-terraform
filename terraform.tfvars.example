@@ -1,0 +1,13 @@
+# terraform.tfvars.example
+
+# AWS region and availability zones
+region = "ap-south-1"
+azs    = ["ap-south-1a", "ap-south-1b"]
+
+# On-prem public IP and network (used in VPN + Security Group)
+customer_gateway_ip = "x.x.x.x"           # Replace with your real on-prem firewall IP
+on_prem_cidr        = "192.168.0.0/16"    # Replace if needed
+
+# EC2 instance config
+ec2_ami           = "ami-xxxxxxxxxxxxxxxxx" # e.g., Amazon Linux 2 in ap-south-1
+ec2_instance_type = "t2.micro"
